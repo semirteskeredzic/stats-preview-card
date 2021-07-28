@@ -87,8 +87,9 @@ body {
 .attribution {
     color: hsl(0, 0%, 100%);
     position: absolute;
-    bottom: 0;
+    font-size: 10px;
     width: 100%;
+    height: 100%;
 }
 
 .attribution-text {
@@ -131,6 +132,11 @@ a {
 
     .text--section-paragraph {
         margin-bottom: 60px;
+    }
+
+    .attribution {
+        bottom: 0;
+        font-size: 12px;
     }
 }
 
