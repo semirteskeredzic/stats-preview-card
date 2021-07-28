@@ -1,7 +1,142 @@
-.attribution {
+body { 
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+.main--container {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text--section-inner-container {
+    width: 80%;
+    padding: 30px;
+}
+
+.text--section {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.text--section-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 100%);
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.title--highlight {
+    color: violet;
+}
+
+.text--section-paragraph {
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text--section-bottom-box-container {
+    display: flex;
+    place-content: space-between;
+    flex-direction: column;
+    color: hsla(0, 0%, 100%, 0.6);
     font-family: 'Lexend Deca', sans-serif;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+.bottom--box-number {
+    margin-bottom: 0;
+    color:hsl(0, 0%, 100%);
+}
+
+.image--section {
+    width: 100%;
+}
+
+.image--section-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image--section-overlay:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 86, 225,0.5);
+    position: absolute;
+}
+
+.image--section-photo {
+    background-image: url(../images/image-header-mobile.jpg);
+    min-height: 328px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.attribution {
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.attribution-text {
+    text-align: center;
+}
+
+a {
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+@media screen and (min-width: 768px) {
+    .main--container  {
+        flex-direction: row;
+        max-width: 1140px;
+    }
+
+    .image--section {
+        width: 50%;
+    }
+
+    .image--section-photo {
+        background-image: url(../images/image-header-desktop.jpg);
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .text--section {
+        width: 50%;
+        text-align: unset;
+    }
+
+    .text--section-inner-container {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .text--section-bottom-box-container {
+        flex-direction: row;
+    }
+
+    .text--section-paragraph {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .text--section-inner-container {
+        width: 70%;
+        padding: 70px;
+    }
 }
