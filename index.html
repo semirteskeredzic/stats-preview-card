@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -24,6 +21,31 @@
   10k+ companies
   314 templates
   12m+ queries
+
+  <div class="main--container">
+    <section class="text--section">
+      <h1 class="text--section-title"><span class="title--highlight"></span></h1>
+      <p class="text--section-paragraph"></p>
+      <div class="text--section-bottom-box-container">
+        <div class="text--section-bottom-box">
+          <h2 class="bottom--box-number"></h2>
+          <span class="bottom--box-text"></span>
+        </div>
+        <div class="text--section-bottom-box">
+          <h2 class="bottom--box-number"></h2>
+          <span class="bottom--box-text"></span>
+        </div>
+        <div class="text--section-bottom-box">
+          <h2 class="bottom--box-number"></h2>
+          <span class="bottom--box-text"></span>
+        </div>
+      </div>
+    </section>
+    <section class="image--section">
+      <img class="image--section-photo"/>
+    </section>
+  </div>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
