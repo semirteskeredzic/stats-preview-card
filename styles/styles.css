@@ -114,6 +114,7 @@ a {
     .main--container  {
         flex-direction: row;
         max-width: 1140px;
+        margin-top: 100px;
     }
 
     .image--section {
@@ -155,6 +156,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+    .main--container {
+        margin-top: 150px;
+    }
+
     .text--section-inner-container {
         width: 70%;
         padding: 70px;
